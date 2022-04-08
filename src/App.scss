@@ -1,0 +1,26 @@
+p, a {
+  font-family: "Gotham Medium", "Segoe UI","Helvetica Neue",Arial,sans-serif;
+  color: #fff; 
+}
+
+.header {
+  background-color: rgba(255,255,255,0);
+}
+.header:hover {
+  background-color: rgba(255,255,255,1);  
+  
+  div a,span {
+    color: #000;
+  }
+} 
+
+.left-menu_divider {
+  padding: 0 15px;
+  margin: 0;
+  color: #fff;
+  font-weight: 900;
+}
+
+.car_img {
+  width: 100%;
+}
