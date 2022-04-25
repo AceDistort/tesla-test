@@ -15,7 +15,7 @@ function Best_Products ()
     // );  
     // console.log(nameList);
 
-    console.log(objects);
+    // console.log(objects);
     return(
         <div className='best_products'>
             <Object_container 

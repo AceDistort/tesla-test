@@ -1,20 +1,42 @@
 .container {
     width: 25%;
     min-width: 300px;
+    max-width: 100%;
     height: auto;
     background-color: rgb(248,248,248);
     margin: 10px 20px;
+    overflow: hidden;
 
     &:hover {
       box-shadow: 1px 1px 2px #ddd;
     }
 
     & p {
-      color: #212121;
       padding: 32px 15px;
       margin: 0;
       font-weight: 500;
       text-align: center;
+    }
+
+    &_square{
+      display: block;
+      width: 45%;
+      height: 450px;
+      min-width: 400px;
+      position: relative;
+      padding: 0;
+      margin: 10px 20px;
+
+      & p {
+        width: 70%;
+        font-size: 20px;
+        font-weight: 500;
+        margin: auto 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
 
     &-horizontal {
@@ -23,13 +45,9 @@
       margin: 10px auto;
       position: relative;
 
-      & img {
-        min-width: 900px;
-        object-fit: cover;
-        overflow: hidden;
-      }
-
       & p {
+        color: #212121;
+        width: 50%;
         position: absolute;
         height: fit-content;
         font-size: 25px;
@@ -41,18 +59,48 @@
 
 .objectImage {
   width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+
+  &_horizontal {
+    min-width: 700px;
+  }
+
+  &_square{
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    width: 50%;
+    min-width: 100%;
+  }
 }
 
 .rightText {
   left: auto;
-  right: 200px;
+  right: 0;
   top: 0;
   bottom: 0;
 }
 
 .leftText {
   right: auto;
-  left: 200px;
+  left: 0;
   top: 0;
   bottom: 0;
+}
+
+.centerText {
+  right: auto;
+  left: auto;
+  top: auto;
+  bottom: auto;
+}
+
+.textColor{
+  &_white{
+    color: #fff;
+  }
+  &_black{
+    color: #000;
+  }
 }

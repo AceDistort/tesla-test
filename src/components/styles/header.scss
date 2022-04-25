@@ -5,11 +5,19 @@
     display: flex;
     justify-content: space-between;
     transition: background-color 0.2s linear;
+    z-index: 100;
 
-    div a,p,span {
+    div a,p,span, button {
         transition: background-color 0.3s linear;
         cursor: pointer;
+        color: #fff;
+        text-decoration: none;
     }
+}
+
+.black
+{
+    color: #000!important;
 }
 
 .header div {
@@ -24,6 +32,7 @@
     margin: 0;
     text-align: center;
     font-family: monospace;
+    font-weight: 900;
 }
 
 .header_button {
@@ -33,8 +42,8 @@
     font-weight: 500;
 }
 
-.header div a:hover {
-    background-color: #f3f3f3;
+.header div a:hover, button:hover {
+    background-color: #f3f3f3!important;
 }
 
 .section_title {
@@ -46,4 +55,76 @@
     margin: 0 14px;
     width: 100px;
     height: 16px;
+}
+
+.btn-close
+{
+    box-shadow: none!important;
+}
+
+.searchInput{
+    width: 90%;
+    height: 30px;
+}
+
+.form-control{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #f3f3f3;
+    border-left: none;
+
+    &:focus{
+        border-left: none;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: none!important;
+        background-color: #f3f3f3;
+        border-color: #d4d9df!important;
+    }
+}
+
+#basic-addon1{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #f3f3f3;
+    box-shadow: none;
+}
+
+.search-icon
+{
+    width: 20px;
+    transform: rotate(-20deg);
+}
+
+.offcanvas-body
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.accordion-button{
+    color: #212529!important;
+    box-shadow: none!important;
+}
+
+.accordion-item{
+    border: none!important;
+}
+
+.menu_button {
+    margin: 5px 10px;
+    padding: 6px 10px;
+    border-radius: 12px; 
+    font-weight: 500;
+
+    &:hover{
+        background-color: #f3f3f3!important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main_menu{
+        display: none!important;
+    }
 }

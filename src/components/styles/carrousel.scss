@@ -1,0 +1,44 @@
+.car_img {
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    transition: left 1s linear;
+  }
+
+.carousel-caption{
+  bottom: auto;
+  top: 25%;
+
+  & p{
+    font-size: 17px;
+  }
+
+  & h3{
+    font-size: 26px;
+  }
+}
+
+.carousel-indicators [data-bs-target]{
+  height: 2px;
+  width: 35px;
+}
+
+.carousel-item{
+  overflow: hidden;
+}
+
+.white{
+  color: #fff!important;
+}
+
+@media screen and (max-width: 768px) {
+  .w-100{
+    width: auto!important;
+  }
+
+  .car_img {
+    width: auto!important;
+    // je suis pas sûr que le vw soit une bonne alternative
+    height: 100vw!important; 
+  }
+}

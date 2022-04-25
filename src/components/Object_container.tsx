@@ -11,7 +11,7 @@ interface Object_container_Props {
 function Object_container(props: Object_container_Props) {
   return(
     <a href={props.link} className={"container " + (props.direction == "horizontal" ? "container-horizontal" : "")}>
-      <img className="objectImage" src={props.src} ></img>
+      <img className={"objectImage " + (props.direction == "horizontal" ? "objectImage_horizontal" : "")} src={props.src} ></img>
       <p className={(props.direction == "horizontal" ? 
         (props.textPosition == "left" ? "leftText" : "rightText") 
       : "" )}

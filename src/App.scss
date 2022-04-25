@@ -1,26 +1,42 @@
-p, a {
-  font-family: "Gotham Medium", "Segoe UI","Helvetica Neue",Arial,sans-serif;
-  color: #fff; 
+:root {
+  --header-bg: rgb(255, 255, 255,0);
+  --header-text-color: rgb(255, 255, 255);
+  --text-font: 'Gotham Medium', sans-serif;
+}
+
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Medium_Web.woff2)
+}
+
+p, h1, h2, h3, a, button {
+  font-family: var(--text-font)!important;
+  color: #000; 
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+
+.box_2container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .header {
-  background-color: rgba(255,255,255,0);
-}
-.header:hover {
-  background-color: rgba(255,255,255,1);  
-  
-  div a,span {
-    color: #000;
+  background-color: var(--header-bg)!important;
+
+  &:hover{
+    --header-bg: rgb(255, 255, 255);
+    --header-text-color: rgb(0, 0, 0);
   }
-} 
-
-.left-menu_divider {
-  padding: 0 15px;
-  margin: 0;
-  color: #fff;
-  font-weight: 900;
 }
 
-.car_img {
-  width: 100%;
+.header_button{
+  color: var(--header-text-color)!important;
+}
+
+.left-menu_divider{
+  color: var(--header-text-color)!important;
 }
