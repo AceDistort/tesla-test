@@ -1,10 +1,10 @@
 .container {
     width: 25%;
-    min-width: 300px;
     max-width: 100%;
     height: auto;
     background-color: rgb(248,248,248);
-    margin: 10px 20px;
+    margin: 10px;
+    padding: 0;
     overflow: hidden;
 
     &:hover {
@@ -20,12 +20,12 @@
 
     &_square{
       display: block;
-      width: 45%;
+      width: calc(50% - 30px);
       height: 450px;
       min-width: 400px;
       position: relative;
       padding: 0;
-      margin: 10px 20px;
+      margin: 10px 10px;
 
       & p {
         width: 70%;
@@ -41,9 +41,21 @@
 
     &-horizontal {
       display: block;
-      width: 98%;
+      width: calc(100% - 20px);
       margin: 10px auto;
+      padding: 0;
       position: relative;
+      height: 450px;
+      min-width: 400px;
+      margin: 10px 10px;
+
+      & img{
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        width: 50%;
+        min-width: 100%;
+      }
 
       & p {
         color: #212121;
@@ -61,10 +73,6 @@
   width: 100%;
   object-fit: cover;
   overflow: hidden;
-
-  &_horizontal {
-    min-width: 700px;
-  }
 
   &_square{
     height: 100%;
@@ -102,5 +110,16 @@
   }
   &_black{
     color: #000;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container{
+    
+    &-vertical{
+      & p{
+        font-size: 12px;
+      }
+    }
   }
 }

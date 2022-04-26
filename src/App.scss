@@ -17,13 +17,6 @@ p, h1, h2, h3, a, button {
   border: none;
 }
 
-.box_2container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
 .header {
   background-color: var(--header-bg)!important;
 
