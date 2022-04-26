@@ -20,6 +20,10 @@ p, h1, h2, h3, a, button {
 .header {
   background-color: var(--header-bg)!important;
 
+  & svg{
+    color: var(--header-text-color)!important;
+  }
+
   &:hover{
     --header-bg: rgb(255, 255, 255);
     --header-text-color: rgb(0, 0, 0);

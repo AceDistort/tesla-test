@@ -75,8 +75,6 @@ function Best_Products ()
 
         sliderPosition = moves * CardWidth;
         $(".slider").css({transform: "translateX(-" + sliderPosition + "px)"})
-
-        console.log(moves);
     }
 
     return(

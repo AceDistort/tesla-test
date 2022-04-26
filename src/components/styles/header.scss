@@ -7,8 +7,8 @@
     transition: background-color 0.2s linear;
     z-index: 100;
 
-    div a,p,span, button {
-        transition: background-color 0.3s linear;
+    div a,p,span {
+        transition: background-color 0.2s linear;
         cursor: pointer;
         color: #fff;
         text-decoration: none;
@@ -42,7 +42,7 @@
     font-weight: 500;
 }
 
-.header div a:hover, button:hover {
+.header div a:hover {
     background-color: #f3f3f3!important;
 }
 

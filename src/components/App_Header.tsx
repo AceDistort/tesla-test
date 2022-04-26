@@ -7,6 +7,8 @@ import InputGroup from 'react-bootstrap/InputGroup'
 import { FormControl } from "react-bootstrap";
 import Accordion from 'react-bootstrap/Accordion'
 import { Input } from "reactstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 
 function App_Header() {
@@ -47,7 +49,9 @@ function App_Header() {
         </div>
 
         <div>
-          <button className="header_button" onClick={handleShow}>Menu</button>
+          <button><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+          <a style={{margin: "0 10px"}} href="https://shop.tesla.com/fr_fr/cart"><FontAwesomeIcon icon={faCartShopping} /></a>
+          <a style={{margin: "0 10px"}} className="header_button" onClick={handleShow}>Menu</a>
         </div>
       </header>
       
