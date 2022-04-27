@@ -38,7 +38,7 @@ function App_Header() {
         <div className="left-menu">
           <img className="logo" src={tesla_img}></img>
           <span className="left-menu_divider">|</span>
-          <a className="header_button">Boutique</a>
+          <a className="header_button shop_button">Boutique</a>
         </div>
 
         <div className="main_menu">
@@ -49,7 +49,7 @@ function App_Header() {
         </div>
 
         <div>
-          <button><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+          <button><FontAwesomeIcon icon={faMagnifyingGlass} className="searchButton" /></button>
           <a style={{margin: "0 10px"}} href="https://shop.tesla.com/fr_fr/cart"><FontAwesomeIcon icon={faCartShopping} /></a>
           <a style={{margin: "0 10px"}} className="header_button" onClick={handleShow}>Menu</a>
         </div>

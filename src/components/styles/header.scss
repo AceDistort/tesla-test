@@ -127,4 +127,19 @@
     .main_menu{
         display: none!important;
     }
+
+    .searchButton
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .shop_button{
+        display: none;
+    }
+
+    .left-menu_divider{
+        display: none;
+    }
 }

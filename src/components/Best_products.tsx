@@ -5,13 +5,8 @@ import { Product } from '../types/product'
 import $ from 'jquery'
 import { useState } from 'react';
 
-var sliderPosition = 0;
-var moves = 0;
-var nb_items = 3;
 var showItems = [0,1,2,3,4];
-var productsList;
 var products : Product[] = [];
-var showItemsExtended : Array<number>= [];
 const translationTime = 300;
 
 function slide(direction : string){

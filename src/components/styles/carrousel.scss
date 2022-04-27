@@ -41,4 +41,14 @@
     // je suis pas sûr que le vw soit une bonne alternative
     height: 100vw!important; 
   }
+
+  .carousel-caption{
+    & p{
+      font-size: 12px;
+    }
+
+    & h3{
+      font-size: 18px;
+    }
+  }
 }
