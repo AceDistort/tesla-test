@@ -1,5 +1,6 @@
 :root{
     --slider-nb-item: 3;
+    --slider-item-width: calc( (100vw - 200px - var(--slider-nb-item)*20px - 20px) / var(--slider-nb-item) );
 }
 
 .best_products {
@@ -31,12 +32,19 @@
     margin-left: 100px;
     display: flex;
     transition: transform 0.5s ease;
+    position: relative;
+    left: calc(var(--slider-item-width) * -1 - 20px);
 
     & a{
-        width: calc( (100vw - 200px - var(--slider-nb-item)*20px - 20px) / var(--slider-nb-item) );
+        width: var(--slider-item-width);
         margin-bottom: 0;
         margin-top: 0;
         flex: none;
+        position: relative;
+
+        & p{
+            height: 110px;
+        }
     }
 }
 
